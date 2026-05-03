@@ -48,6 +48,7 @@ What it is:
 Examples:
 resources/
 ├── docker/
+
 │   └── Dockerfile.template
 ├── scripts/
 │   └── deploy.sh
