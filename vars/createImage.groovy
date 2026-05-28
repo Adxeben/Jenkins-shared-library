@@ -1,6 +1,6 @@
 #!/user/bin/env groovy
 
-def call() {
+def call(String imageName) {
     echo "creating the docker image..."
-    sh "docker build -t sunesis003/app-jenkins:jsl-6.0 ."
+    sh "docker build -t $imageName ."
 }
