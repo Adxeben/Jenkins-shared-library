@@ -1,6 +1,4 @@
-🔥 1. vars/ (MOST IMPORTANT)
-
-This is where most DevOps engineers spend their time.
+1. vars/ (MOST IMPORTANT)
 
 What it is:
 - Global reusable pipeline functions
@@ -18,8 +16,7 @@ publishDocker(...)
 
 ----------------------------------------------//
 
-
-🧠 2. src/ (for structured Groovy/Java code)
+2. src/ (for structured Groovy/Java code)
 
 What it is:
 - Proper Groovy classes (like Java packages)
@@ -40,7 +37,7 @@ When to use:
 ----------------------------------------------//
 
 
-📦 3. resources/ (static files)
+3. resources/ (static files)
 
 What it is:
 - Non-Groovy files used by scripts
