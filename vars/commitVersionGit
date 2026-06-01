@@ -1,0 +1,18 @@
+#!/usr/bin/env groovy
+
+def call () {
+  echo "commiting app version increment to git repo..."
+    withCredentials([usernamePassword(credentialsId: 'gitlab-credentials', usernameVariable: 'GITLAB_USER', passwordVariable: 'GITLAB_PASS')]){
+
+        sh "git config --global user.email 'jasonsunesis@gmail.com'"
+        sh "git config --global user.name 'omotola' "
+
+        sh "git status"
+        sh "git branch"
+        sh "git config --list"
+
+        sh "git remote set-url origin https://${GITLAB_USER}:${GITLAB_PASS}@gitlab.com/omotolaadebulu/java-maven-jenkins.git"
+        sh "git add ."
+        sh "git commit -m 'version increment commit to git'"
+        sh "git push origin HEAD:master"
+  }
